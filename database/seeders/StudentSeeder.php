@@ -43,6 +43,7 @@ class StudentSeeder extends Seeder
         foreach ($data as $siswa) {
             Student::insert([
                 'nama_siswa' => $siswa['name'],
+                // import = use Illuminate\Support\Arr;
                 'gender' => Arr::random(['L', 'P']),
                 'nis' => mt_rand(0000001, 9999999),
                 'class_id' => Arr::random([1, 2, 3]),
