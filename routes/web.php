@@ -26,6 +26,10 @@ Route::get('/student', [StudentController::class, 'index']);
 //memanggil class
 Route::get('/class', [ClassController::class, 'index']);
 
+// memanggil function latihan
+Route::get('/latihan', [StudentController::class, 'latihan']);
+
+
 // memanggil tampilan contact
 Route::get('/contact', function () {
     return view('contact', [
